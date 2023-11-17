@@ -1,0 +1,396 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --primaryfont:'Arimo', sans-serif;
+    --secondryfont:'Abril Fatface', serif;
+    --maincolor: #44cdf4;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+body{
+    font-family: var(--primaryfont);
+}
+/* nav starts here */
+nav{
+    padding-top: 50px;
+    border-top: 3px solid #83d3e9;
+    background-color: #fef8ff;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 30px;
+   font-family: var(--primaryfont);
+   
+}
+nav ul{
+    text-align: center;
+}
+.manu{
+    width: 80%;
+  padding-top: 14px;
+
+}
+
+.icon{
+    width: 20%;
+    
+}
+
+.icon img{
+    width: 110px;
+}
+
+nav ul li:hover a{
+    color: var(--maincolor);
+    border-bottom:1px solid #44cdf4;
+    letter-spacing: 2px;
+}
+
+nav ul a{
+    transition: 0.4s;  
+}
+
+nav span a{
+    padding: 20px 15px;
+    background-color: var(--maincolor);
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
+
+nav span a:hover{
+    color: black;
+}
+/* nav ends here */
+
+/* frist section starts here  */
+.fristsec .topics{
+    width: 70%;
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
+.fristsec .topics h2{
+    font-size: 58px;
+    font-family: var(--secondryfont);
+}
+
+.fristsec .topics p{
+    color: #888;
+}
+
+.fristsec .fristsecimg{
+    width: 30%;
+    padding-top: 50px;
+
+    padding-bottom: 50px;
+}
+/* frist section end here  */
+
+/* popular section starts here  */
+
+.popular .topics{
+    text-align: center;
+}
+
+.popular{
+    padding-top: 100px;
+    height: 800px;
+}
+
+.head{
+    font-size: 32px;
+    font-family: var(--secondryfont);
+}
+
+.popular .topics p{
+    color: #888;
+}
+ 
+
+.popularcard{
+    width: 20%;
+    text-align: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding-top: 100px;
+    border-radius:10px ;
+    height: 275px;
+    transition: 0.10s;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.popularcard img{
+    width: 50px;
+}
+
+.popularcard h4{
+    font-family: var(--secondryfont);
+}
+
+.popular .row{
+    padding-top: 80px; ;
+}
+
+.popular .popularcard:hover{
+ padding: 80px 50px;
+ background-color: var(--maincolor);
+ color: white;
+ transform: scale(1.2);
+}
+/* popular section ends here */
+
+
+/* works section starts */
+.work{
+    padding-top: 250px;
+    height: 800px;
+}
+
+.work .topic{
+    text-align: center;
+}
+
+.work .row{
+    padding-top: 100px;
+}
+
+.workcard{
+    width: 33.33%;
+    text-align: center;
+    
+}
+
+.workcard img{
+    transition: 0.4s;
+}
+.workcard h4{
+    font-family: var(--secondryfont);
+    font-size: 20px;
+}
+
+.workcard:hover img{
+    background-color: #97d3e483;
+    padding: 20px;
+   border-radius: 5px;
+}
+/* works section ends */
+
+/* profile section starts  */
+
+.profile .topic{
+    text-align: center;
+}
+
+.profile{
+    height: 950px;
+    background-color: #f5f5f5;
+    padding-top: 50px;
+}
+
+.profile p{
+    color: #888;
+}
+.profile .row{
+    padding-top: 100px;
+}
+.profilecard{
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    width: 30%;
+    height: 510px;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: 0.4s;
+    margin-bottom: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profilecard .profileimg p{
+    background-color: #44cdf4;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 2.5;
+    position: absolute;
+    font-family: var(--secondryfont);
+    text-align: center;
+    border: 3px solid white;
+    right: 25%;
+    top: 25%;
+    color: white;
+    font-size: 15px;
+}
+
+
+.profilecard .profileimg {
+    padding-top: 20px;
+}
+
+.profilecard h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.profilecard i{
+    display: inline-block;
+    color: #f68b1e;
+}
+
+.profilecard #p1{
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.profiletopics p{
+    display: inline-block;
+}
+
+.profiletopics #p2{
+  top: 18%;
+    width: 50%;
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    padding-left: 10px;
+}
+
+.profiletopics {
+    position: relative;
+}
+
+.profiletopics #p3{
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 190px;
+
+}
+
+.profiletopics {
+    border-top: 1px solid #f1f1f1;
+
+}
+
+
+
+.profilecard h5{
+    padding: 20px 60px;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+.profilecard h5 i{
+    color: black;
+    transition: 0.4s;
+}
+
+.profilecard:hover h5  {
+    color: #44cdf4;
+     
+}
+
+.profilecard:hover h5 i{
+    color: #44cdf4;
+}
+
+.profilecard:hover{
+    border-bottom:2px solid #44cdf4;
+}
+
+.profilefooter{
+    display: flex;
+}
+
+.profilefooter p{
+    width: 75%;
+padding-top: 25px;
+}
+
+.profilefooter a{
+    background-color: #44cdf4;
+    padding: 20px 30px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+/* profile section ends */
+
+/* mailstone starts  */
+.mailstone{
+    padding-top: 120px;
+    height: 800px;
+}
+
+.mailstone .topic{
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.companiesnames,.companiesimgs{
+    width: 50%;
+}
+
+.companiesnames .companiepera {
+    font-family: var(--secondryfont);
+    font-size: 46px;
+    line-height: 25px;
+    padding: 10px 30px;
+    
+}
+.companiepera {
+    border-bottom: 2px solid #f1f1f1;
+    border-right: 2px solid #f1f1f1;
+    
+    font-family: var(--secondryfont);
+    font-size: 46px;
+    line-height: 25px;
+    padding: 10px 30px;
+    
+}
+
+.companiepera:last-child{
+    border-right: none;
+}
+
+.companiepera:nth-child(2){
+    border-right: none;
+}
+
+.companiesnames .companiepera span{
+    font-size: 20px;
+}
+/* mailstone ends */
